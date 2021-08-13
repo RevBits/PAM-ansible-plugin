@@ -1,0 +1,4 @@
+requests>=2.22.0
+python-dotenv
+flit
+aes-everywhere==1.2.10
