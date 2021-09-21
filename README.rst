@@ -5,7 +5,7 @@ The [pam](https://pam.com/) [Secret Server](https://pam.com/products/secret-serv
 ## Install
 
 ```shell
-python -m pip install revbits-pss-sdk
+python -m pip install revbits_ansible
 ```
 ## Secret Server
 
@@ -15,7 +15,7 @@ With API key you can authorize the `SecretServer` class to fetch secrets.
 To instantiate the `SecretServer` class, it requires a `base_url`, `api_key` and an optional `api_path_uri` (defaults to `"/api/v1"`)
 
 ```python
-from pam.secrets.server import ServerSecret
+from pam.revbits_ansible.server import ServerSecret
 
 secret_server = SecretServer("https://pam.revbits.com", api_key)
 ```
@@ -29,7 +29,7 @@ print(f"secret: {secret}")
 ```
 
 ```shell
-from pam.secrets.server import ServerSecret
+from pam.revbits_ansible.server import ServerSecret
 
 secret = ServerSecret(**secret_server.get_pam_secret('DB_HOST'))
 
@@ -44,8 +44,8 @@ First, ensure Python is in `$PATH`, then run:
 
 ```shell
 # Clone the repo
-git clone https://github.com/revbits-pss-sdk
-cd revbits-pss-sdk
+git clone https://github.com/RevBits/PAM-ansible-plugin
+cd PAM-ansible-plugin
 
 # Create a virtual environment
 python -m venv venv

@@ -66,7 +66,7 @@ class SecretServer:
         api_path_uri=API_PATH_URI,
     ):
         """
-        :param base_url: The base URL e.g. ``http://localhost/SecretServer``
+        :param base_url: The base URL e.g. ``http://pam.revbits.net/``
         :type base_url: str
         :param api_key: The authorization method to be used
         :type api_key: str
